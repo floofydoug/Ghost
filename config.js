@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'floofyblog.azurewebsites.net',
+        url: 'http://dougphuhg.com',
         mail: {
             transport: 'SMTP',
             options: {
@@ -41,7 +41,7 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         // Change this to your Ghost blogs published URL.
-        url: 'floofyblog.azurewebsites.net',
+        url: 'http://dougphung.com',
 
         // Example mail config
         // Visit http://support.ghost.org/mail for instructions

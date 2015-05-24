@@ -1,4 +1,4 @@
-define("ghost/adapters/application", 
+define("ghost/adapters/application",
   ["ghost/utils/ghost-paths","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -35,7 +35,7 @@ define("ghost/adapters/application",
         // with the JSON object for the deleted entity and Ember expects an empty
         // response body for successful DELETEs.
         // Non-2xx (failure) responses will still work correctly as Ember will turn
-        // them into rejected promises.
+        // them into rejected promise
         deleteRecord: function () {
             var response = this._super.apply(this, arguments);
 
@@ -47,7 +47,7 @@ define("ghost/adapters/application",
 
     __exports__["default"] = ApplicationAdapter;
   });
-define("ghost/adapters/embedded-relation-adapter", 
+define("ghost/adapters/embedded-relation-adapter",
   ["ghost/adapters/application","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -120,7 +120,7 @@ define("ghost/adapters/embedded-relation-adapter",
 
     __exports__["default"] = EmbeddedRelationAdapter;
   });
-define("ghost/adapters/post", 
+define("ghost/adapters/post",
   ["ghost/adapters/embedded-relation-adapter","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -162,7 +162,7 @@ define("ghost/adapters/post",
 
     __exports__["default"] = PostAdapter;
   });
-define("ghost/adapters/setting", 
+define("ghost/adapters/setting",
   ["ghost/adapters/application","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -188,7 +188,7 @@ define("ghost/adapters/setting",
 
     __exports__["default"] = SettingAdapter;
   });
-define("ghost/adapters/user", 
+define("ghost/adapters/user",
   ["ghost/adapters/embedded-relation-adapter","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -237,7 +237,7 @@ define("ghost/adapters/user",
 
     __exports__["default"] = UserAdapter;
   });
-define("ghost/app", 
+define("ghost/app",
   ["ember/resolver","ember/load-initializers","ghost/utils/link-view","ghost/utils/text-field","ghost/config","ghost/helpers/ghost-paths","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __dependency6__, __exports__) {
     "use strict";
@@ -262,7 +262,7 @@ define("ghost/app",
 
     __exports__["default"] = App;
   });
-define("ghost/assets/lib/touch-editor", 
+define("ghost/assets/lib/touch-editor",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -324,7 +324,7 @@ define("ghost/assets/lib/touch-editor",
 
     __exports__["default"] = createTouchEditor;
   });
-define("ghost/assets/lib/uploader", 
+define("ghost/assets/lib/uploader",
   ["ghost/utils/ghost-paths","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -597,7 +597,7 @@ define("ghost/assets/lib/uploader",
 
     __exports__["default"] = upload;
   });
-define("ghost/components/gh-activating-list-item", 
+define("ghost/components/gh-activating-list-item",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -609,7 +609,7 @@ define("ghost/components/gh-activating-list-item",
 
     __exports__["default"] = ActivatingListItem;
   });
-define("ghost/components/gh-codemirror", 
+define("ghost/components/gh-codemirror",
   ["ghost/mixins/marker-manager","ghost/utils/codemirror-mobile","ghost/utils/set-scroll-classname","ghost/utils/codemirror-shortcuts","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __exports__) {
     "use strict";
@@ -777,7 +777,7 @@ define("ghost/components/gh-codemirror",
 
     __exports__["default"] = Codemirror;
   });
-define("ghost/components/gh-dropdown-button", 
+define("ghost/components/gh-dropdown-button",
   ["ghost/mixins/dropdown-mixin","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -798,7 +798,7 @@ define("ghost/components/gh-dropdown-button",
 
     __exports__["default"] = DropdownButton;
   });
-define("ghost/components/gh-dropdown", 
+define("ghost/components/gh-dropdown",
   ["ghost/mixins/dropdown-mixin","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -894,7 +894,7 @@ define("ghost/components/gh-dropdown",
 
     __exports__["default"] = GhostDropdown;
   });
-define("ghost/components/gh-file-upload", 
+define("ghost/components/gh-file-upload",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -927,7 +927,7 @@ define("ghost/components/gh-file-upload",
 
     __exports__["default"] = FileUpload;
   });
-define("ghost/components/gh-form", 
+define("ghost/components/gh-form",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -947,7 +947,7 @@ define("ghost/components/gh-form",
 
     __exports__["default"] = Form;
   });
-define("ghost/components/gh-input", 
+define("ghost/components/gh-input",
   ["ghost/mixins/text-input","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -957,7 +957,7 @@ define("ghost/components/gh-input",
 
     __exports__["default"] = Input;
   });
-define("ghost/components/gh-markdown", 
+define("ghost/components/gh-markdown",
   ["ghost/assets/lib/uploader","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -998,7 +998,7 @@ define("ghost/components/gh-markdown",
 
     __exports__["default"] = Markdown;
   });
-define("ghost/components/gh-modal-dialog", 
+define("ghost/components/gh-modal-dialog",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1061,7 +1061,7 @@ define("ghost/components/gh-modal-dialog",
 
     __exports__["default"] = ModalDialog;
   });
-define("ghost/components/gh-notification", 
+define("ghost/components/gh-notification",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1112,7 +1112,7 @@ define("ghost/components/gh-notification",
 
     __exports__["default"] = NotificationComponent;
   });
-define("ghost/components/gh-notifications", 
+define("ghost/components/gh-notifications",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1141,7 +1141,7 @@ define("ghost/components/gh-notifications",
 
     __exports__["default"] = NotificationsComponent;
   });
-define("ghost/components/gh-popover-button", 
+define("ghost/components/gh-popover-button",
   ["ghost/components/gh-dropdown-button","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -1163,7 +1163,7 @@ define("ghost/components/gh-popover-button",
 
     __exports__["default"] = PopoverButton;
   });
-define("ghost/components/gh-popover", 
+define("ghost/components/gh-popover",
   ["ghost/components/gh-dropdown","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -1175,7 +1175,7 @@ define("ghost/components/gh-popover",
 
     __exports__["default"] = GhostPopover;
   });
-define("ghost/components/gh-role-selector", 
+define("ghost/components/gh-role-selector",
   ["ghost/components/gh-select","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -1194,7 +1194,7 @@ define("ghost/components/gh-role-selector",
 
     __exports__["default"] = RolesSelector;
   });
-define("ghost/components/gh-select", 
+define("ghost/components/gh-select",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1277,7 +1277,7 @@ define("ghost/components/gh-select",
 
     __exports__["default"] = GhostSelect;
   });
-define("ghost/components/gh-tab-pane", 
+define("ghost/components/gh-tab-pane",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1310,7 +1310,7 @@ define("ghost/components/gh-tab-pane",
 
     __exports__["default"] = TabPane;
   });
-define("ghost/components/gh-tab", 
+define("ghost/components/gh-tab",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1345,7 +1345,7 @@ define("ghost/components/gh-tab",
 
     __exports__["default"] = Tab;
   });
-define("ghost/components/gh-tabs-manager", 
+define("ghost/components/gh-tabs-manager",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1433,7 +1433,7 @@ define("ghost/components/gh-tabs-manager",
 
     __exports__["default"] = TabsManager;
   });
-define("ghost/components/gh-textarea", 
+define("ghost/components/gh-textarea",
   ["ghost/mixins/text-input","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -1443,7 +1443,7 @@ define("ghost/components/gh-textarea",
 
     __exports__["default"] = TextArea;
   });
-define("ghost/components/gh-trim-focus-input", 
+define("ghost/components/gh-trim-focus-input",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1474,7 +1474,7 @@ define("ghost/components/gh-trim-focus-input",
 
     __exports__["default"] = TrimFocusInput;
   });
-define("ghost/components/gh-upload-modal", 
+define("ghost/components/gh-upload-modal",
   ["ghost/components/gh-modal-dialog","ghost/assets/lib/uploader","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -1529,7 +1529,7 @@ define("ghost/components/gh-upload-modal",
 
     __exports__["default"] = UploadModal;
   });
-define("ghost/components/gh-uploader", 
+define("ghost/components/gh-uploader",
   ["ghost/assets/lib/uploader","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -1568,7 +1568,7 @@ define("ghost/components/gh-uploader",
 
     __exports__["default"] = PostImageUploader;
   });
-define("ghost/config", 
+define("ghost/config",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1588,7 +1588,7 @@ define("ghost/config",
 
     __exports__["default"] = configureApp;
   });
-define("ghost/controllers/application", 
+define("ghost/controllers/application",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1616,7 +1616,7 @@ define("ghost/controllers/application",
 
     __exports__["default"] = ApplicationController;
   });
-define("ghost/controllers/editor/edit", 
+define("ghost/controllers/editor/edit",
   ["ghost/mixins/editor-base-controller","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -1626,7 +1626,7 @@ define("ghost/controllers/editor/edit",
 
     __exports__["default"] = EditorEditController;
   });
-define("ghost/controllers/editor/new", 
+define("ghost/controllers/editor/new",
   ["ghost/mixins/editor-base-controller","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -1650,7 +1650,7 @@ define("ghost/controllers/editor/new",
 
     __exports__["default"] = EditorNewController;
   });
-define("ghost/controllers/error", 
+define("ghost/controllers/error",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1670,7 +1670,7 @@ define("ghost/controllers/error",
 
     __exports__["default"] = ErrorController;
   });
-define("ghost/controllers/forgotten", 
+define("ghost/controllers/forgotten",
   ["ghost/utils/ajax","ghost/mixins/validation-engine","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -1718,7 +1718,7 @@ define("ghost/controllers/forgotten",
 
     __exports__["default"] = ForgottenController;
   });
-define("ghost/controllers/modals/auth-failed-unsaved", 
+define("ghost/controllers/modals/auth-failed-unsaved",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1756,7 +1756,7 @@ define("ghost/controllers/modals/auth-failed-unsaved",
 
     __exports__["default"] = AuthFailedUnsavedController;
   });
-define("ghost/controllers/modals/copy-html", 
+define("ghost/controllers/modals/copy-html",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1768,7 +1768,7 @@ define("ghost/controllers/modals/copy-html",
 
     __exports__["default"] = CopyHTMLController;
   });
-define("ghost/controllers/modals/delete-all", 
+define("ghost/controllers/modals/delete-all",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1805,7 +1805,7 @@ define("ghost/controllers/modals/delete-all",
 
     __exports__["default"] = DeleteAllController;
   });
-define("ghost/controllers/modals/delete-post", 
+define("ghost/controllers/modals/delete-post",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1846,7 +1846,7 @@ define("ghost/controllers/modals/delete-post",
 
     __exports__["default"] = DeletePostController;
   });
-define("ghost/controllers/modals/delete-user", 
+define("ghost/controllers/modals/delete-user",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1884,7 +1884,7 @@ define("ghost/controllers/modals/delete-user",
 
     __exports__["default"] = DeleteUserController;
   });
-define("ghost/controllers/modals/invite-new-user", 
+define("ghost/controllers/modals/invite-new-user",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -1971,7 +1971,7 @@ define("ghost/controllers/modals/invite-new-user",
 
     __exports__["default"] = InviteNewUserController;
   });
-define("ghost/controllers/modals/leave-editor", 
+define("ghost/controllers/modals/leave-editor",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -2035,7 +2035,7 @@ define("ghost/controllers/modals/leave-editor",
 
     __exports__["default"] = LeaveEditorController;
   });
-define("ghost/controllers/modals/transfer-owner", 
+define("ghost/controllers/modals/transfer-owner",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -2092,7 +2092,7 @@ define("ghost/controllers/modals/transfer-owner",
 
     __exports__["default"] = TransferOwnerController;
   });
-define("ghost/controllers/modals/upload", 
+define("ghost/controllers/modals/upload",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -2119,7 +2119,7 @@ define("ghost/controllers/modals/upload",
 
     __exports__["default"] = UploadController;
   });
-define("ghost/controllers/post-settings-menu", 
+define("ghost/controllers/post-settings-menu",
   ["ghost/utils/date-formatting","ghost/models/slug-generator","ghost/utils/bound-one-way","ghost/utils/isNumber","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __exports__) {
     "use strict";
@@ -2595,7 +2595,7 @@ define("ghost/controllers/post-settings-menu",
 
     __exports__["default"] = PostSettingsMenuController;
   });
-define("ghost/controllers/post-tags-input", 
+define("ghost/controllers/post-tags-input",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -2843,7 +2843,7 @@ define("ghost/controllers/post-tags-input",
 
     __exports__["default"] = PostTagsInputController;
   });
-define("ghost/controllers/posts", 
+define("ghost/controllers/posts",
   ["ghost/mixins/pagination-controller","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -2927,7 +2927,7 @@ define("ghost/controllers/posts",
 
     __exports__["default"] = PostsController;
   });
-define("ghost/controllers/posts/post", 
+define("ghost/controllers/posts/post",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -2953,7 +2953,7 @@ define("ghost/controllers/posts/post",
 
     __exports__["default"] = PostController;
   });
-define("ghost/controllers/reset", 
+define("ghost/controllers/reset",
   ["ghost/utils/ajax","ghost/mixins/validation-engine","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -2961,21 +2961,21 @@ define("ghost/controllers/reset",
 
     var ValidationEngine = __dependency2__["default"];
 
-    
+
     var ResetController = Ember.Controller.extend(ValidationEngine, {
         newPassword: '',
         ne2Password: '',
         token: '',
         submitButtonDisabled: false,
-    
+
         validationType: 'reset',
-    
+
         email: Ember.computed('token', function () {
             // The token base64 encodes the email (and some other stuff),
             // each section is divided by a '|'. Email comes second.
             return atob(this.get('token')).split('|')[1];
         }),
-    
+
         // Used to clear sensitive information
         clearData: function () {
             this.setProperties({
@@ -2984,12 +2984,12 @@ define("ghost/controllers/reset",
                 token: ''
             });
         },
-    
+
         actions: {
             submit: function () {
                 var credentials = this.getProperties('newPassword', 'ne2Password', 'token'),
                     self = this;
-    
+
                 this.toggleProperty('submitting');
                 this.validate({format: false}).then(function () {
                     ajax({
@@ -3016,10 +3016,10 @@ define("ghost/controllers/reset",
             }
         }
     });
-    
+
     __exports__["default"] = ResetController;
   });
-define("ghost/controllers/settings", 
+define("ghost/controllers/settings",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3049,7 +3049,7 @@ define("ghost/controllers/settings",
 
     __exports__["default"] = SettingsController;
   });
-define("ghost/controllers/settings/app", 
+define("ghost/controllers/settings/app",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3117,7 +3117,7 @@ define("ghost/controllers/settings/app",
 
     __exports__["default"] = SettingsAppController;
   });
-define("ghost/controllers/settings/code-injection", 
+define("ghost/controllers/settings/code-injection",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3141,7 +3141,7 @@ define("ghost/controllers/settings/code-injection",
 
     __exports__["default"] = SettingsCodeInjectionController;
   });
-define("ghost/controllers/settings/general", 
+define("ghost/controllers/settings/general",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3196,7 +3196,7 @@ define("ghost/controllers/settings/general",
 
     __exports__["default"] = SettingsGeneralController;
   });
-define("ghost/controllers/settings/labs", 
+define("ghost/controllers/settings/labs",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3267,7 +3267,7 @@ define("ghost/controllers/settings/labs",
 
     __exports__["default"] = LabsController;
   });
-define("ghost/controllers/settings/tags", 
+define("ghost/controllers/settings/tags",
   ["ghost/mixins/pagination-controller","ghost/utils/bound-one-way","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -3372,7 +3372,7 @@ define("ghost/controllers/settings/tags",
 
     __exports__["default"] = TagsController;
   });
-define("ghost/controllers/settings/users/index", 
+define("ghost/controllers/settings/users/index",
   ["ghost/mixins/pagination-controller","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -3400,7 +3400,7 @@ define("ghost/controllers/settings/users/index",
 
     __exports__["default"] = UsersIndexController;
   });
-define("ghost/controllers/settings/users/user", 
+define("ghost/controllers/settings/users/user",
   ["ghost/models/slug-generator","ghost/utils/isNumber","ghost/utils/bound-one-way","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -3635,7 +3635,7 @@ define("ghost/controllers/settings/users/user",
 
     __exports__["default"] = SettingsUserController;
   });
-define("ghost/controllers/setup", 
+define("ghost/controllers/setup",
   ["ghost/utils/ajax","ghost/mixins/validation-engine","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -3691,7 +3691,7 @@ define("ghost/controllers/setup",
 
     __exports__["default"] = SetupController;
   });
-define("ghost/controllers/signin", 
+define("ghost/controllers/signin",
   ["ghost/mixins/validation-engine","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -3724,7 +3724,7 @@ define("ghost/controllers/signin",
 
     __exports__["default"] = SigninController;
   });
-define("ghost/controllers/signup", 
+define("ghost/controllers/signup",
   ["ghost/utils/ajax","ghost/mixins/validation-engine","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -3777,7 +3777,7 @@ define("ghost/controllers/signup",
 
     __exports__["default"] = SignupController;
   });
-define("ghost/docs/js/nav", 
+define("ghost/docs/js/nav",
   [],
   function() {
     "use strict";
@@ -3838,7 +3838,7 @@ define("ghost/docs/js/nav",
 
     })();
   });
-define("ghost/helpers/gh-blog-url", 
+define("ghost/helpers/gh-blog-url",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3848,7 +3848,7 @@ define("ghost/helpers/gh-blog-url",
 
     __exports__["default"] = blogUrl;
   });
-define("ghost/helpers/gh-count-characters", 
+define("ghost/helpers/gh-count-characters",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3871,7 +3871,7 @@ define("ghost/helpers/gh-count-characters",
 
     __exports__["default"] = countCharacters;
   });
-define("ghost/helpers/gh-count-down-characters", 
+define("ghost/helpers/gh-count-down-characters",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3894,7 +3894,7 @@ define("ghost/helpers/gh-count-down-characters",
 
     __exports__["default"] = countDownCharacters;
   });
-define("ghost/helpers/gh-count-words", 
+define("ghost/helpers/gh-count-words",
   ["ghost/utils/word-count","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -3912,7 +3912,7 @@ define("ghost/helpers/gh-count-words",
 
     __exports__["default"] = countWords;
   });
-define("ghost/helpers/gh-format-html", 
+define("ghost/helpers/gh-format-html",
   ["ghost/utils/caja-sanitizers","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -3940,7 +3940,7 @@ define("ghost/helpers/gh-format-html",
 
     __exports__["default"] = formatHTML;
   });
-define("ghost/helpers/gh-format-markdown", 
+define("ghost/helpers/gh-format-markdown",
   ["ghost/utils/caja-sanitizers","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -3976,7 +3976,7 @@ define("ghost/helpers/gh-format-markdown",
 
     __exports__["default"] = formatMarkdown;
   });
-define("ghost/helpers/gh-format-timeago", 
+define("ghost/helpers/gh-format-timeago",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -3990,7 +3990,7 @@ define("ghost/helpers/gh-format-timeago",
 
     __exports__["default"] = formatTimeago;
   });
-define("ghost/helpers/ghost-paths", 
+define("ghost/helpers/ghost-paths",
   ["ghost/utils/ghost-paths","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -4048,7 +4048,7 @@ define("ghost/helpers/ghost-paths",
 
     __exports__["default"] = ghostPathsHelper;
   });
-define("ghost/initializers/authentication", 
+define("ghost/initializers/authentication",
   ["ghost/utils/ghost-paths","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -4097,7 +4097,7 @@ define("ghost/initializers/authentication",
 
     __exports__["default"] = AuthenticationInitializer;
   });
-define("ghost/initializers/dropdown", 
+define("ghost/initializers/dropdown",
   ["ghost/utils/dropdown-service","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -4125,7 +4125,7 @@ define("ghost/initializers/dropdown",
 
     __exports__["default"] = dropdownInitializer;
   });
-define("ghost/initializers/ghost-config", 
+define("ghost/initializers/ghost-config",
   ["ghost/utils/config-parser","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -4146,7 +4146,7 @@ define("ghost/initializers/ghost-config",
 
     __exports__["default"] = ConfigInitializer;
   });
-define("ghost/initializers/ghost-paths", 
+define("ghost/initializers/ghost-paths",
   ["ghost/utils/ghost-paths","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -4167,7 +4167,7 @@ define("ghost/initializers/ghost-paths",
 
     __exports__["default"] = ghostPathsInitializer;
   });
-define("ghost/initializers/notifications", 
+define("ghost/initializers/notifications",
   ["ghost/utils/notifications","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -4189,7 +4189,7 @@ define("ghost/initializers/notifications",
 
     __exports__["default"] = injectNotificationsInitializer;
   });
-define("ghost/initializers/store-injector", 
+define("ghost/initializers/store-injector",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -4204,7 +4204,7 @@ define("ghost/initializers/store-injector",
 
     __exports__["default"] = StoreInjector;
   });
-define("ghost/initializers/trailing-history", 
+define("ghost/initializers/trailing-history",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -4231,7 +4231,7 @@ define("ghost/initializers/trailing-history",
 
     __exports__["default"] = registerTrailingLocationHistory;
   });
-define("ghost/mixins/body-event-listener", 
+define("ghost/mixins/body-event-listener",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -4282,7 +4282,7 @@ define("ghost/mixins/body-event-listener",
 
     __exports__["default"] = BodyEventListener;
   });
-define("ghost/mixins/current-user-settings", 
+define("ghost/mixins/current-user-settings",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -4318,7 +4318,7 @@ define("ghost/mixins/current-user-settings",
 
     __exports__["default"] = CurrentUserSettings;
   });
-define("ghost/mixins/dropdown-mixin", 
+define("ghost/mixins/dropdown-mixin",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -4338,7 +4338,7 @@ define("ghost/mixins/dropdown-mixin",
 
     __exports__["default"] = DropdownMixin;
   });
-define("ghost/mixins/editor-base-controller", 
+define("ghost/mixins/editor-base-controller",
   ["ghost/mixins/marker-manager","ghost/models/post","ghost/utils/bound-one-way","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -4709,7 +4709,7 @@ define("ghost/mixins/editor-base-controller",
 
     __exports__["default"] = EditorControllerMixin;
   });
-define("ghost/mixins/editor-base-route", 
+define("ghost/mixins/editor-base-route",
   ["ghost/mixins/shortcuts-route","ghost/mixins/style-body","ghost/mixins/loading-indicator","ghost/utils/editor-shortcuts","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __exports__) {
     "use strict";
@@ -4845,7 +4845,7 @@ define("ghost/mixins/editor-base-route",
 
     __exports__["default"] = EditorBaseRoute;
   });
-define("ghost/mixins/editor-base-view", 
+define("ghost/mixins/editor-base-view",
   ["ghost/utils/set-scroll-classname","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -4906,7 +4906,7 @@ define("ghost/mixins/editor-base-view",
 
     __exports__["default"] = EditorViewMixin;
   });
-define("ghost/mixins/loading-indicator", 
+define("ghost/mixins/loading-indicator",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -4942,7 +4942,7 @@ define("ghost/mixins/loading-indicator",
 
     __exports__["default"] = loadingIndicator;
   });
-define("ghost/mixins/marker-manager", 
+define("ghost/mixins/marker-manager",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5170,7 +5170,7 @@ define("ghost/mixins/marker-manager",
 
     __exports__["default"] = MarkerManager;
   });
-define("ghost/mixins/nprogress-save", 
+define("ghost/mixins/nprogress-save",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5196,7 +5196,7 @@ define("ghost/mixins/nprogress-save",
 
     __exports__["default"] = NProgressSaveMixin;
   });
-define("ghost/mixins/pagination-controller", 
+define("ghost/mixins/pagination-controller",
   ["ghost/utils/ajax","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -5275,7 +5275,7 @@ define("ghost/mixins/pagination-controller",
 
     __exports__["default"] = PaginationControllerMixin;
   });
-define("ghost/mixins/pagination-route", 
+define("ghost/mixins/pagination-route",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5309,7 +5309,7 @@ define("ghost/mixins/pagination-route",
 
     __exports__["default"] = PaginationRoute;
   });
-define("ghost/mixins/pagination-view-infinite-scroll", 
+define("ghost/mixins/pagination-view-infinite-scroll",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5353,7 +5353,7 @@ define("ghost/mixins/pagination-view-infinite-scroll",
 
     __exports__["default"] = PaginationViewInfiniteScrollMixin;
   });
-define("ghost/mixins/selective-save", 
+define("ghost/mixins/selective-save",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5479,7 +5479,7 @@ define("ghost/mixins/selective-save",
 
     __exports__["default"] = SelectiveSaveMixin;
   });
-define("ghost/mixins/shortcuts-route", 
+define("ghost/mixins/shortcuts-route",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5570,7 +5570,7 @@ define("ghost/mixins/shortcuts-route",
 
     __exports__["default"] = ShortcutsRoute;
   });
-define("ghost/mixins/style-body", 
+define("ghost/mixins/style-body",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5606,7 +5606,7 @@ define("ghost/mixins/style-body",
 
     __exports__["default"] = styleBody;
   });
-define("ghost/mixins/text-input", 
+define("ghost/mixins/text-input",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5634,7 +5634,7 @@ define("ghost/mixins/text-input",
 
     __exports__["default"] = BlurField;
   });
-define("ghost/mixins/validation-engine", 
+define("ghost/mixins/validation-engine",
   ["ghost/utils/ajax","ghost/utils/validator-extensions","ghost/validators/post","ghost/validators/setup","ghost/validators/signup","ghost/validators/signin","ghost/validators/forgotten","ghost/validators/setting","ghost/validators/reset","ghost/validators/user","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __dependency6__, __dependency7__, __dependency8__, __dependency9__, __dependency10__, __exports__) {
     "use strict";
@@ -5799,7 +5799,7 @@ define("ghost/mixins/validation-engine",
 
     __exports__["default"] = ValidationEngine;
   });
-define("ghost/models/notification", 
+define("ghost/models/notification",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5813,7 +5813,7 @@ define("ghost/models/notification",
 
     __exports__["default"] = Notification;
   });
-define("ghost/models/post", 
+define("ghost/models/post",
   ["ghost/mixins/validation-engine","ghost/mixins/nprogress-save","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -5866,7 +5866,7 @@ define("ghost/models/post",
 
     __exports__["default"] = Post;
   });
-define("ghost/models/role", 
+define("ghost/models/role",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5884,7 +5884,7 @@ define("ghost/models/role",
 
     __exports__["default"] = Role;
   });
-define("ghost/models/setting", 
+define("ghost/models/setting",
   ["ghost/mixins/validation-engine","ghost/mixins/nprogress-save","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -5911,7 +5911,7 @@ define("ghost/models/setting",
 
     __exports__["default"] = Setting;
   });
-define("ghost/models/slug-generator", 
+define("ghost/models/slug-generator",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -5944,7 +5944,7 @@ define("ghost/models/slug-generator",
 
     __exports__["default"] = SlugGenerator;
   });
-define("ghost/models/tag", 
+define("ghost/models/tag",
   ["ghost/mixins/nprogress-save","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -5962,7 +5962,7 @@ define("ghost/models/tag",
 
     __exports__["default"] = Tag;
   });
-define("ghost/models/user", 
+define("ghost/models/user",
   ["ghost/mixins/validation-engine","ghost/mixins/nprogress-save","ghost/mixins/selective-save","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -6071,7 +6071,7 @@ define("ghost/models/user",
 
     __exports__["default"] = User;
   });
-define("ghost/router", 
+define("ghost/router",
   ["ghost/utils/ghost-paths","ghost/utils/document-title","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -6131,7 +6131,7 @@ define("ghost/router",
 
     __exports__["default"] = Router;
   });
-define("ghost/routes/application", 
+define("ghost/routes/application",
   ["ghost/mixins/shortcuts-route","ghost/utils/ctrl-or-cmd","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -6305,7 +6305,7 @@ define("ghost/routes/application",
 
     __exports__["default"] = ApplicationRoute;
   });
-define("ghost/routes/authenticated", 
+define("ghost/routes/authenticated",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -6313,7 +6313,7 @@ define("ghost/routes/authenticated",
 
     __exports__["default"] = AuthenticatedRoute;
   });
-define("ghost/routes/content", 
+define("ghost/routes/content",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -6325,7 +6325,7 @@ define("ghost/routes/content",
 
     __exports__["default"] = ContentRoute;
   });
-define("ghost/routes/debug", 
+define("ghost/routes/debug",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -6337,7 +6337,7 @@ define("ghost/routes/debug",
 
     __exports__["default"] = DebugRoute;
   });
-define("ghost/routes/editor/edit", 
+define("ghost/routes/editor/edit",
   ["ghost/routes/authenticated","ghost/mixins/editor-base-route","ghost/utils/isNumber","ghost/utils/isFinite","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __exports__) {
     "use strict";
@@ -6396,7 +6396,7 @@ define("ghost/routes/editor/edit",
 
     __exports__["default"] = EditorEditRoute;
   });
-define("ghost/routes/editor/index", 
+define("ghost/routes/editor/index",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -6408,7 +6408,7 @@ define("ghost/routes/editor/index",
 
     __exports__["default"] = EditorRoute;
   });
-define("ghost/routes/editor/new", 
+define("ghost/routes/editor/new",
   ["ghost/routes/authenticated","ghost/mixins/editor-base-route","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -6443,7 +6443,7 @@ define("ghost/routes/editor/new",
 
     __exports__["default"] = EditorNewRoute;
   });
-define("ghost/routes/error404", 
+define("ghost/routes/error404",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -6461,7 +6461,7 @@ define("ghost/routes/error404",
 
     __exports__["default"] = Error404Route;
   });
-define("ghost/routes/forgotten", 
+define("ghost/routes/forgotten",
   ["ghost/mixins/style-body","ghost/mixins/loading-indicator","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -6476,7 +6476,7 @@ define("ghost/routes/forgotten",
 
     __exports__["default"] = ForgottenRoute;
   });
-define("ghost/routes/mobile-index-route", 
+define("ghost/routes/mobile-index-route",
   ["ghost/utils/mobile","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -6510,7 +6510,7 @@ define("ghost/routes/mobile-index-route",
 
     __exports__["default"] = MobileIndexRoute;
   });
-define("ghost/routes/posts", 
+define("ghost/routes/posts",
   ["ghost/routes/authenticated","ghost/mixins/style-body","ghost/mixins/shortcuts-route","ghost/mixins/loading-indicator","ghost/mixins/pagination-route","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __exports__) {
     "use strict";
@@ -6625,7 +6625,7 @@ define("ghost/routes/posts",
 
     __exports__["default"] = PostsRoute;
   });
-define("ghost/routes/posts/index", 
+define("ghost/routes/posts/index",
   ["ghost/routes/mobile-index-route","ghost/mixins/loading-indicator","ghost/utils/mobile","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -6680,7 +6680,7 @@ define("ghost/routes/posts/index",
 
     __exports__["default"] = PostsIndexRoute;
   });
-define("ghost/routes/posts/post", 
+define("ghost/routes/posts/post",
   ["ghost/routes/authenticated","ghost/mixins/loading-indicator","ghost/mixins/shortcuts-route","ghost/utils/isNumber","ghost/utils/isFinite","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __dependency5__, __exports__) {
     "use strict";
@@ -6759,7 +6759,7 @@ define("ghost/routes/posts/post",
 
     __exports__["default"] = PostsPostRoute;
   });
-define("ghost/routes/reset", 
+define("ghost/routes/reset",
   ["ghost/mixins/style-body","ghost/mixins/loading-indicator","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -6789,7 +6789,7 @@ define("ghost/routes/reset",
 
     __exports__["default"] = ResetRoute;
   });
-define("ghost/routes/settings", 
+define("ghost/routes/settings",
   ["ghost/routes/authenticated","ghost/mixins/style-body","ghost/mixins/loading-indicator","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -6805,7 +6805,7 @@ define("ghost/routes/settings",
 
     __exports__["default"] = SettingsRoute;
   });
-define("ghost/routes/settings/about", 
+define("ghost/routes/settings/about",
   ["ghost/routes/authenticated","ghost/mixins/loading-indicator","ghost/mixins/style-body","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -6841,7 +6841,7 @@ define("ghost/routes/settings/about",
 
     __exports__["default"] = SettingsAboutRoute;
   });
-define("ghost/routes/settings/apps", 
+define("ghost/routes/settings/apps",
   ["ghost/routes/authenticated","ghost/mixins/current-user-settings","ghost/mixins/style-body","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -6871,7 +6871,7 @@ define("ghost/routes/settings/apps",
 
     __exports__["default"] = AppsRoute;
   });
-define("ghost/routes/settings/code-injection", 
+define("ghost/routes/settings/code-injection",
   ["ghost/routes/authenticated","ghost/mixins/loading-indicator","ghost/mixins/current-user-settings","ghost/mixins/style-body","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __exports__) {
     "use strict";
@@ -6904,7 +6904,7 @@ define("ghost/routes/settings/code-injection",
 
     __exports__["default"] = SettingsCodeInjectionRoute;
   });
-define("ghost/routes/settings/general", 
+define("ghost/routes/settings/general",
   ["ghost/routes/authenticated","ghost/mixins/loading-indicator","ghost/mixins/current-user-settings","ghost/mixins/style-body","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __exports__) {
     "use strict";
@@ -6939,7 +6939,7 @@ define("ghost/routes/settings/general",
 
     __exports__["default"] = SettingsGeneralRoute;
   });
-define("ghost/routes/settings/index", 
+define("ghost/routes/settings/index",
   ["ghost/routes/mobile-index-route","ghost/mixins/current-user-settings","ghost/utils/mobile","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -6972,7 +6972,7 @@ define("ghost/routes/settings/index",
 
     __exports__["default"] = SettingsIndexRoute;
   });
-define("ghost/routes/settings/labs", 
+define("ghost/routes/settings/labs",
   ["ghost/routes/authenticated","ghost/mixins/style-body","ghost/mixins/current-user-settings","ghost/mixins/loading-indicator","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __dependency4__, __exports__) {
     "use strict";
@@ -7000,7 +7000,7 @@ define("ghost/routes/settings/labs",
 
     __exports__["default"] = LabsRoute;
   });
-define("ghost/routes/settings/tags", 
+define("ghost/routes/settings/tags",
   ["ghost/routes/authenticated","ghost/mixins/current-user-settings","ghost/mixins/pagination-route","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -7048,7 +7048,7 @@ define("ghost/routes/settings/tags",
 
     __exports__["default"] = TagsRoute;
   });
-define("ghost/routes/settings/users", 
+define("ghost/routes/settings/users",
   ["ghost/routes/authenticated","ghost/mixins/current-user-settings","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -7064,7 +7064,7 @@ define("ghost/routes/settings/users",
 
     __exports__["default"] = UsersRoute;
   });
-define("ghost/routes/settings/users/index", 
+define("ghost/routes/settings/users/index",
   ["ghost/routes/authenticated","ghost/mixins/pagination-route","ghost/mixins/style-body","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -7120,7 +7120,7 @@ define("ghost/routes/settings/users/index",
 
     __exports__["default"] = UsersIndexRoute;
   });
-define("ghost/routes/settings/users/user", 
+define("ghost/routes/settings/users/user",
   ["ghost/routes/authenticated","ghost/mixins/style-body","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -7183,7 +7183,7 @@ define("ghost/routes/settings/users/user",
 
     __exports__["default"] = SettingsUserRoute;
   });
-define("ghost/routes/setup", 
+define("ghost/routes/setup",
   ["ghost/mixins/style-body","ghost/mixins/loading-indicator","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -7222,7 +7222,7 @@ define("ghost/routes/setup",
 
     __exports__["default"] = SetupRoute;
   });
-define("ghost/routes/signin", 
+define("ghost/routes/signin",
   ["ghost/mixins/style-body","ghost/mixins/loading-indicator","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -7252,7 +7252,7 @@ define("ghost/routes/signin",
 
     __exports__["default"] = SigninRoute;
   });
-define("ghost/routes/signout", 
+define("ghost/routes/signout",
   ["ghost/routes/authenticated","ghost/mixins/style-body","ghost/mixins/loading-indicator","exports"],
   function(__dependency1__, __dependency2__, __dependency3__, __exports__) {
     "use strict";
@@ -7278,7 +7278,7 @@ define("ghost/routes/signout",
 
     __exports__["default"] = SignoutRoute;
   });
-define("ghost/routes/signup", 
+define("ghost/routes/signup",
   ["ghost/mixins/style-body","ghost/mixins/loading-indicator","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -7345,7 +7345,7 @@ define("ghost/routes/signup",
 
     __exports__["default"] = SignupRoute;
   });
-define("ghost/serializers/application", 
+define("ghost/serializers/application",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7368,7 +7368,7 @@ define("ghost/serializers/application",
 
     __exports__["default"] = ApplicationSerializer;
   });
-define("ghost/serializers/post", 
+define("ghost/serializers/post",
   ["ghost/serializers/application","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -7437,7 +7437,7 @@ define("ghost/serializers/post",
 
     __exports__["default"] = PostSerializer;
   });
-define("ghost/serializers/setting", 
+define("ghost/serializers/setting",
   ["ghost/serializers/application","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -7479,7 +7479,7 @@ define("ghost/serializers/setting",
 
     __exports__["default"] = SettingSerializer;
   });
-define("ghost/serializers/user", 
+define("ghost/serializers/user",
   ["ghost/serializers/application","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -7518,7 +7518,7 @@ define("ghost/serializers/user",
 
     __exports__["default"] = UserSerializer;
   });
-define("ghost/transforms/moment-date", 
+define("ghost/transforms/moment-date",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7539,7 +7539,7 @@ define("ghost/transforms/moment-date",
     });
     __exports__["default"] = MomentDate;
   });
-define("ghost/utils/ajax", 
+define("ghost/utils/ajax",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7596,7 +7596,7 @@ define("ghost/utils/ajax",
     __exports__.ajax = ajax;
     __exports__["default"] = ajax;
   });
-define("ghost/utils/bind", 
+define("ghost/utils/bind",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7616,7 +7616,7 @@ define("ghost/utils/bind",
 
     __exports__["default"] = bind;
   });
-define("ghost/utils/bound-one-way", 
+define("ghost/utils/bound-one-way",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7643,7 +7643,7 @@ define("ghost/utils/bound-one-way",
 
     __exports__["default"] = BoundOneWay;
   });
-define("ghost/utils/caja-sanitizers", 
+define("ghost/utils/caja-sanitizers",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7679,7 +7679,7 @@ define("ghost/utils/caja-sanitizers",
         id: id
     };
   });
-define("ghost/utils/codemirror-mobile", 
+define("ghost/utils/codemirror-mobile",
   ["ghost/assets/lib/touch-editor","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -7728,7 +7728,7 @@ define("ghost/utils/codemirror-mobile",
         createIfMobile: init
     };
   });
-define("ghost/utils/codemirror-shortcuts", 
+define("ghost/utils/codemirror-shortcuts",
   ["ghost/utils/titleize","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -7879,7 +7879,7 @@ define("ghost/utils/codemirror-shortcuts",
         init: init
     };
   });
-define("ghost/utils/config-parser", 
+define("ghost/utils/config-parser",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7920,7 +7920,7 @@ define("ghost/utils/config-parser",
 
     __exports__["default"] = parseConfiguration;
   });
-define("ghost/utils/ctrl-or-cmd", 
+define("ghost/utils/ctrl-or-cmd",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7928,7 +7928,7 @@ define("ghost/utils/ctrl-or-cmd",
 
     __exports__["default"] = ctrlOrCmd;
   });
-define("ghost/utils/date-formatting", 
+define("ghost/utils/date-formatting",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -7973,7 +7973,7 @@ define("ghost/utils/date-formatting",
     __exports__.parseDateString = parseDateString;
     __exports__.formatDate = formatDate;
   });
-define("ghost/utils/document-title", 
+define("ghost/utils/document-title",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8038,7 +8038,7 @@ define("ghost/utils/document-title",
 
     __exports__["default"] = documentTitle;
   });
-define("ghost/utils/dropdown-service", 
+define("ghost/utils/dropdown-service",
   ["ghost/mixins/body-event-listener","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8060,7 +8060,7 @@ define("ghost/utils/dropdown-service",
 
     __exports__["default"] = DropdownService;
   });
-define("ghost/utils/editor-shortcuts", 
+define("ghost/utils/editor-shortcuts",
   ["ghost/utils/ctrl-or-cmd","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8097,7 +8097,7 @@ define("ghost/utils/editor-shortcuts",
 
     __exports__["default"] = shortcuts;
   });
-define("ghost/utils/ghost-paths", 
+define("ghost/utils/ghost-paths",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8144,7 +8144,7 @@ define("ghost/utils/ghost-paths",
 
     __exports__["default"] = ghostPaths;
   });
-define("ghost/utils/isFinite", 
+define("ghost/utils/isFinite",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8158,7 +8158,7 @@ define("ghost/utils/isFinite",
 
     __exports__["default"] = isFinite;
   });
-define("ghost/utils/isNumber", 
+define("ghost/utils/isNumber",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8173,7 +8173,7 @@ define("ghost/utils/isNumber",
 
     __exports__["default"] = isNumber;
   });
-define("ghost/utils/link-view", 
+define("ghost/utils/link-view",
   [],
   function() {
     "use strict";
@@ -8191,7 +8191,7 @@ define("ghost/utils/link-view",
         })
     });
   });
-define("ghost/utils/mobile", 
+define("ghost/utils/mobile",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8199,7 +8199,7 @@ define("ghost/utils/mobile",
 
     __exports__["default"] = mobileQuery;
   });
-define("ghost/utils/notifications", 
+define("ghost/utils/notifications",
   ["ghost/models/notification","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8351,7 +8351,7 @@ define("ghost/utils/notifications",
 
     __exports__["default"] = Notifications;
   });
-define("ghost/utils/set-scroll-classname", 
+define("ghost/utils/set-scroll-classname",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8375,7 +8375,7 @@ define("ghost/utils/set-scroll-classname",
 
     __exports__["default"] = setScrollClassName;
   });
-define("ghost/utils/text-field", 
+define("ghost/utils/text-field",
   [],
   function() {
     "use strict";
@@ -8383,7 +8383,7 @@ define("ghost/utils/text-field",
         attributeBindings: ['autofocus']
     });
   });
-define("ghost/utils/titleize", 
+define("ghost/utils/titleize",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8405,7 +8405,7 @@ define("ghost/utils/titleize",
 
     __exports__["default"] = titleize;
   });
-define("ghost/utils/validator-extensions", 
+define("ghost/utils/validator-extensions",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8425,7 +8425,7 @@ define("ghost/utils/validator-extensions",
         init: init
     };
   });
-define("ghost/utils/word-count", 
+define("ghost/utils/word-count",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8441,7 +8441,7 @@ define("ghost/utils/word-count",
 
     __exports__["default"] = wordCount;
   });
-define("ghost/validators/forgotten", 
+define("ghost/validators/forgotten",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8462,7 +8462,7 @@ define("ghost/validators/forgotten",
 
     __exports__["default"] = ForgotValidator;
   });
-define("ghost/validators/new-user", 
+define("ghost/validators/new-user",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8495,7 +8495,7 @@ define("ghost/validators/new-user",
 
     __exports__["default"] = NewUserValidator;
   });
-define("ghost/validators/post", 
+define("ghost/validators/post",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8528,7 +8528,7 @@ define("ghost/validators/post",
 
     __exports__["default"] = PostValidator;
   });
-define("ghost/validators/reset", 
+define("ghost/validators/reset",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8555,7 +8555,7 @@ define("ghost/validators/reset",
 
     __exports__["default"] = ResetValidator;
   });
-define("ghost/validators/setting", 
+define("ghost/validators/setting",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8597,7 +8597,7 @@ define("ghost/validators/setting",
 
     __exports__["default"] = SettingValidator;
   });
-define("ghost/validators/setup", 
+define("ghost/validators/setup",
   ["ghost/validators/new-user","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8620,7 +8620,7 @@ define("ghost/validators/setup",
 
     __exports__["default"] = SetupValidator;
   });
-define("ghost/validators/signin", 
+define("ghost/validators/signin",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8643,7 +8643,7 @@ define("ghost/validators/signin",
 
     __exports__["default"] = SigninValidator;
   });
-define("ghost/validators/signup", 
+define("ghost/validators/signup",
   ["ghost/validators/new-user","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8651,7 +8651,7 @@ define("ghost/validators/signup",
 
     __exports__["default"] = NewUserValidator.create();
   });
-define("ghost/validators/user", 
+define("ghost/validators/user",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8720,7 +8720,7 @@ define("ghost/validators/user",
 
     __exports__["default"] = UserValidator;
   });
-define("ghost/views/application", 
+define("ghost/views/application",
   ["ghost/utils/mobile","ghost/utils/bind","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -8790,7 +8790,7 @@ define("ghost/views/application",
 
     __exports__["default"] = ApplicationView;
   });
-define("ghost/views/content-preview-content-view", 
+define("ghost/views/content-preview-content-view",
   ["ghost/utils/set-scroll-classname","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8819,7 +8819,7 @@ define("ghost/views/content-preview-content-view",
 
     __exports__["default"] = PostContentView;
   });
-define("ghost/views/editor-save-button", 
+define("ghost/views/editor-save-button",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8848,7 +8848,7 @@ define("ghost/views/editor-save-button",
 
     __exports__["default"] = EditorSaveButtonView;
   });
-define("ghost/views/editor/edit", 
+define("ghost/views/editor/edit",
   ["ghost/mixins/editor-base-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8861,7 +8861,7 @@ define("ghost/views/editor/edit",
 
     __exports__["default"] = EditorView;
   });
-define("ghost/views/editor/new", 
+define("ghost/views/editor/new",
   ["ghost/mixins/editor-base-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8875,7 +8875,7 @@ define("ghost/views/editor/new",
 
     __exports__["default"] = EditorNewView;
   });
-define("ghost/views/item-view", 
+define("ghost/views/item-view",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -8889,7 +8889,7 @@ define("ghost/views/item-view",
 
     __exports__["default"] = ItemView;
   });
-define("ghost/views/mobile/content-view", 
+define("ghost/views/mobile/content-view",
   ["ghost/utils/mobile","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8906,7 +8906,7 @@ define("ghost/views/mobile/content-view",
 
     __exports__["default"] = MobileContentView;
   });
-define("ghost/views/mobile/index-view", 
+define("ghost/views/mobile/index-view",
   ["ghost/utils/mobile","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8923,7 +8923,7 @@ define("ghost/views/mobile/index-view",
 
     __exports__["default"] = MobileIndexView;
   });
-define("ghost/views/mobile/parent-view", 
+define("ghost/views/mobile/parent-view",
   ["ghost/utils/mobile","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -8961,7 +8961,7 @@ define("ghost/views/mobile/parent-view",
 
     __exports__["default"] = MobileParentView;
   });
-define("ghost/views/paginated-scroll-box", 
+define("ghost/views/paginated-scroll-box",
   ["ghost/utils/set-scroll-classname","ghost/mixins/pagination-view-infinite-scroll","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -8984,7 +8984,7 @@ define("ghost/views/paginated-scroll-box",
 
     __exports__["default"] = PaginatedScrollBox;
   });
-define("ghost/views/post-item-view", 
+define("ghost/views/post-item-view",
   ["ghost/views/item-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9009,7 +9009,7 @@ define("ghost/views/post-item-view",
 
     __exports__["default"] = PostItemView;
   });
-define("ghost/views/post-settings-menu", 
+define("ghost/views/post-settings-menu",
   ["ghost/utils/date-formatting","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9028,7 +9028,7 @@ define("ghost/views/post-settings-menu",
 
     __exports__["default"] = PostSettingsMenuView;
   });
-define("ghost/views/post-tags-input", 
+define("ghost/views/post-tags-input",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -9170,7 +9170,7 @@ define("ghost/views/post-tags-input",
 
     __exports__["default"] = PostTagsInputView;
   });
-define("ghost/views/posts", 
+define("ghost/views/posts",
   ["ghost/views/mobile/parent-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9194,7 +9194,7 @@ define("ghost/views/posts",
 
     __exports__["default"] = PostsView;
   });
-define("ghost/views/posts/index", 
+define("ghost/views/posts/index",
   ["ghost/views/mobile/index-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9206,7 +9206,7 @@ define("ghost/views/posts/index",
 
     __exports__["default"] = PostsIndexView;
   });
-define("ghost/views/posts/post", 
+define("ghost/views/posts/post",
   ["ghost/views/mobile/content-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9216,7 +9216,7 @@ define("ghost/views/posts/post",
 
     __exports__["default"] = PostsPostView;
   });
-define("ghost/views/settings", 
+define("ghost/views/settings",
   ["ghost/views/mobile/parent-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9241,7 +9241,7 @@ define("ghost/views/settings",
 
     __exports__["default"] = SettingsView;
   });
-define("ghost/views/settings/about", 
+define("ghost/views/settings/about",
   ["ghost/views/settings/content-base","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9251,7 +9251,7 @@ define("ghost/views/settings/about",
 
     __exports__["default"] = SettingsAboutView;
   });
-define("ghost/views/settings/apps", 
+define("ghost/views/settings/apps",
   ["ghost/views/settings/content-base","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9261,7 +9261,7 @@ define("ghost/views/settings/apps",
 
     __exports__["default"] = SettingsAppsView;
   });
-define("ghost/views/settings/code-injection", 
+define("ghost/views/settings/code-injection",
   ["ghost/views/settings/content-base","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9271,7 +9271,7 @@ define("ghost/views/settings/code-injection",
 
     __exports__["default"] = SettingsGeneralView;
   });
-define("ghost/views/settings/content-base", 
+define("ghost/views/settings/content-base",
   ["ghost/views/mobile/content-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9289,7 +9289,7 @@ define("ghost/views/settings/content-base",
 
     __exports__["default"] = SettingsContentBaseView;
   });
-define("ghost/views/settings/general", 
+define("ghost/views/settings/general",
   ["ghost/views/settings/content-base","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9299,7 +9299,7 @@ define("ghost/views/settings/general",
 
     __exports__["default"] = SettingsGeneralView;
   });
-define("ghost/views/settings/index", 
+define("ghost/views/settings/index",
   ["ghost/views/mobile/index-view","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9309,7 +9309,7 @@ define("ghost/views/settings/index",
 
     __exports__["default"] = SettingsIndexView;
   });
-define("ghost/views/settings/labs", 
+define("ghost/views/settings/labs",
   ["ghost/views/settings/content-base","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9319,7 +9319,7 @@ define("ghost/views/settings/labs",
 
     __exports__["default"] = SettingsLabsView;
   });
-define("ghost/views/settings/tags", 
+define("ghost/views/settings/tags",
   ["ghost/views/settings/content-base","ghost/mixins/pagination-view-infinite-scroll","exports"],
   function(__dependency1__, __dependency2__, __exports__) {
     "use strict";
@@ -9330,7 +9330,7 @@ define("ghost/views/settings/tags",
 
     __exports__["default"] = SettingsTagsView;
   });
-define("ghost/views/settings/tags/settings-menu", 
+define("ghost/views/settings/tags/settings-menu",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -9344,7 +9344,7 @@ define("ghost/views/settings/tags/settings-menu",
 
     __exports__["default"] = TagsSettingsMenuView;
   });
-define("ghost/views/settings/users", 
+define("ghost/views/settings/users",
   ["ghost/views/settings/content-base","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
@@ -9354,7 +9354,7 @@ define("ghost/views/settings/users",
 
     __exports__["default"] = SettingsUsersView;
   });
-define("ghost/views/settings/users/user", 
+define("ghost/views/settings/users/user",
   ["exports"],
   function(__exports__) {
     "use strict";
@@ -9387,7 +9387,7 @@ define("ghost/views/settings/users/user",
 
     __exports__["default"] = SettingsUserView;
   });
-define("ghost/views/settings/users/users-list-view", 
+define("ghost/views/settings/users/users-list-view",
   ["ghost/mixins/pagination-view-infinite-scroll","exports"],
   function(__dependency1__, __exports__) {
     "use strict";
